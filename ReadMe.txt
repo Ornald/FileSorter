@@ -1,4 +1,4 @@
-Sorter to .jar and .xml files for Pretius intervie task.
+Sorter to .jar and .xml files for Pretius interview task.
 
 To fix:
 - Moved to DEV and TEST folders counter
