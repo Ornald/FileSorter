@@ -15,6 +15,12 @@ public class cScann {
    private String test_string = "TEST/";
    private File home_file = new File("Home");
    private  File[] files_array;
+
+    /**
+     * Metoda skanująca folder i tworząca listę plików w folderze.
+     * Następnie dla każdego pliku wykonywana jest metoda decydująco o przeniesieniu do innego folderu.
+     */
+
 public void Scaner()
 {
 
@@ -30,7 +36,10 @@ public void Scaner()
 
     /**
      * Metoda decydująca, gdzie plik o danym rozszerzeniu powinien trafić.
-     * @param file_name
+     * Zgodnie z wytycznymi pliki xml trafiają do folderu test wraz z plikami .jar o godzinach nieparzystych,
+     * a pliki .jar z godzin parzystych trafiają do folderu DEV.
+     * Zwiększane są liczniki przenoszonych plików.
+     * @param file_name Przyjmuje nazwę pliku, który ma zostać sprawdzony i przeniesiony.
      */
     private void DirControler (String file_name){
 

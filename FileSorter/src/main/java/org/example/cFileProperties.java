@@ -17,9 +17,9 @@ public class cFileProperties {
     }
 
     /**
-     * Metoda uzyskująca rozszerzenie pliku. Zwraca stringa będącego rozszerzeniem
-     * @param file
-     * @return String
+     * Metoda uzyskująca rozszerzenie pliku. Zwraca stringa będącego rozszerzeniem podanego pliku.
+     * @param file Pobiera nazwę pliku z rozszerzeniem.
+     * @return String Zwraca stringa z rozszerzeniem danego pliku.
      */
     public String getExtension (String file)
     {
@@ -27,9 +27,10 @@ public class cFileProperties {
     }
 
     /**
-     * Metoda zwarcająca godzinę utworzenia pliku.
-     * @param path
-     * @return
+     * Metoda zwarcająca godzinę utworzenia pliku. W przypadku nie znalezienia pliku zwraca -1.
+     * Po pobraniu daty wyciągana jest godzina i przetwarzana na int.
+     * @param path Przyjmuje ścieżkę do pliku, którego godzina ma zostać sprawdzona.
+     * @return Zwraca int będący godziną utworzenia pliku lub -1 gdy pliku nie udało się otworzyć.
      */
 
     public int getCreationHour(String path)

@@ -15,7 +15,7 @@ public class App
     public static void main( String[] args )
     {
         /**
-         * Tworznenie katalogów
+         * Tworznenie katalogów HOME,DEV,TEST.
          */
 
             cCreateDir home_dir = new cCreateDir("HOME");
@@ -28,6 +28,7 @@ public class App
 
         /**
          * Pętla główna programu z uśpieniem na 5 sekund.
+         * W pętli skanowany jest folder HOME w celu znalezienia szukanych plików.
          */
 
         cScann scanner = new cScann();
